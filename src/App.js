@@ -4,7 +4,8 @@ import './App.css';
 
 function App() {
   console.log('NODE_ENV=', process.env.NODE_ENV);
-  console.log('REACT_APP_TEST', process.env.REACT_APP_TEST);
+  console.log('REACT_APP_TEST=', process.env.REACT_APP_TEST);
+  console.log('REACT_APP_FROM_DOTENV=', process.env.REACT_APP_FROM_DOTENV);
   return (
     <div className="App">
       <header className="App-header">
