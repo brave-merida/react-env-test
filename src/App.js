@@ -1,8 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+/**
+ * NODE_ENV depends on build type
+ * If HEROKU ENV is exists, the app is using that
+ * If HEROKU ENV does not exist, the app is using .env
+ */
 function App() {
+  
   console.log('NODE_ENV=', process.env.NODE_ENV);
   console.log('REACT_APP_TEST=', process.env.REACT_APP_TEST);
   console.log('REACT_APP_FROM_DOTENV=', process.env.REACT_APP_FROM_DOTENV);
