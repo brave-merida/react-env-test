@@ -1,8 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+const logger = require('heroku-logger')
 
 function App() {
+  logger.info('NODE_ENV=', process.env.NODE_ENV);
+  logger.info('REACT_APP_TEST', process.env.REACT_APP_TEST);
   return (
     <div className="App">
       <header className="App-header">
